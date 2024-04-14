@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>Site Pessoal</title>
 </head>
 <body>
@@ -17,13 +18,13 @@
             </ul>
         </nav>
     </header>
-    <div class="container_perfil">
+    <div class="container container_perfil">
         <div class="imagem_perfil">
             <img src="assets/img/img_perfil.jpg" alt="Perfil">
         </div>
         <div class="descricao">
             <h1>Alexandre Magno Avellar Costa e Araújo</h1>
-        </br>
+            </br>
             <p>Cursando o 6º período de Engenharia de Computação na PUC Minas, atualmente trabalho como desenvolvedor full-stack, utilizando principalmente React e C#, entre outras tecnologias.</br>Tenho experiência trabalhando também como suporte e possuo grande facilidade com prototipação e desenvolvimente Front-End.</p>
             </br>
             <div class="links">
@@ -33,6 +34,127 @@
             </div>
         </div>
     </div>
-    
+    <div class="container container_repositorios">
+        <h2>Repositórios (3)</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card card_repositorio">
+                    <div class="card-body">
+                        <a href="repo.html" class="text-decoration-none">
+                            <h3 class="card-title">Site Pessoal</h3>
+                        </a>
+                        <p class="card-text">Site pessoal contendo informações sobre o usuário, repositórios do GitHub, conteúdos sugeridos e apresentação de colegas de curso.</p>
+                        <a href="github.com/alexandmag/site_pessoal" class="card-link">github.com/alexandmag/site_pessoal</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card_repositorio">
+                    <div class="card-body">
+                        <a href="repo.html" class="text-decoration-none">
+                            <h3 class="card-title">Biblioteca em Grafos</h3>
+                        </a>
+                        <p class="card-text">Biblioteca de grafos que permite a representação do grafo tanto em matriz de adjacência quanto em lista de adjacência</p>
+                        <a href="github.com/millenyteixeira/Representa-o-de-Grafos" class="card-link">github.com/millenyteixeira/Representa-o-de-Grafos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card_repositorio">
+                    <div class="card-body">
+                        <a href="repo.html" class="text-decoration-none">
+                            <h3 class="card-title">OnBuy Auction</h3>
+                        </a>
+                        <p class="card-text">Projeto da matéria de Laborátorio de Desenvolvimento para Dispositivos Móveis: Aplicativo de Leilão Online desenvolvido em Flutter</p>
+                        <a href="github.com/Ahjotarezende/OnBuy-Auction" class="card-link">github.com/Ahjotarezende/OnBuy-Auction</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container container_sugestao">
+        <h2>Conteúdos Sugeridos</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card card_sugestao">
+                        <img src="assets/img/React.jpg" class="card-img-top" alt="React">
+                        <div class="card-body">
+                            <h3 class="card-title">React</h3>
+                            <p class="card-text">React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.</p>
+                            <a href="https://pt-br.reactjs.org/" class="card-link">pt-br.reactjs.org</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card card_sugestao">
+                        <img src="assets/img/Flutter.png" class="card-img-top" alt="Flutter">
+                        <div class="card-body">
+                            <h3 class="card-title">Flutter</h3>
+                            <p class="card-text">Flutter é um kit de desenvolvimento de interface de usuário, de código aberto, criado pelo Google, que possibilita a criação de aplicativos compilados nativamente.</p>
+                            <a href="https://flutter.dev/" class="card-link">flutter.dev</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card card_sugestao">
+                        <img src="assets/img/Unity.jpg" class="card-img-top" alt="Unity">
+                        <div class="card-body">
+                            <h3 class="card-title">Unity</h3>
+                            <p class="card-text">Unity é um motor de jogo desenvolvido pela Unity Technologies, que é usado para criar jogos em várias plataformas.</p>
+                            <a href="https://unity.com/pt" class="card-link">unity.com/pt</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="container container_colegas">
+        <h2>Colegas de Curso</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card card_colega">
+                    <img src="https://media.licdn.com/dms/image/C4E03AQGGPQGGgVJI5Q/profile-displayphoto-shrink_800_800/0/1650301425034?e=1718841600&v=beta&t=yMe4SBrGZHUb7By4rZz4ouJXwj5bDrp4YkYwtVDmUv8" class="mx-auto d-block" alt="João Augusto">
+                    <div class="card-body">
+                        <h3 class="card-title">João Augusto</h3>
+                        <a href="https://www.linkedin.com/in/jo%C3%A3o-augusto-rezende/" class="card-link">linkedin.com/in/joão-augusto-rezende</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card_colega">
+                    <img src="https://media.licdn.com/dms/image/D4E03AQGZ3IcJjfJFxg/profile-displayphoto-shrink_800_800/0/1682688298943?e=1718841600&v=beta&t=0E98DrSN64_A0XSA2_IIvx-6WfFTPIvkF2K-BHfmn5U" class="mx-auto d-block" alt="Samuel Rocha">
+                    <div class="card-body">
+                        <h3 class="card-title">Samuel Rocha</h3>
+                        <a href="https://www.linkedin.com/in/samuelcorocha/" class="card-link">linkedin.com/in/samuelcorocha</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card_colega">
+                    <img src="https://media.licdn.com/dms/image/D4D03AQEe0qna9Hwvaw/profile-displayphoto-shrink_800_800/0/1710550752309?e=1718841600&v=beta&t=_159I9IgSzI4c3vn3hz9mVqY9oXDDezdH5awg9KFTVk" class="mx-auto d-block" alt="Arthur Oliveira">
+                    <div class="card-body">
+                        <h3 class="card-title">Arthur Oliveira</h3>
+                        <a href="https://www.linkedin.com/in/arthur-oliveira-braga/" class="card-link">linkedin.com/in/arthur-oliveira-braga</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Desenvolvido por Alexandre Magno</p>
+        <a href="https://www.pucminas.br/"><img src="assets/img/puc_logo.png" alt="PUC Minas"/></a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
