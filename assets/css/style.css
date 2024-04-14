@@ -51,6 +51,7 @@ header nav ul {
     
 header nav li {
     flex: 1;
+    text-align: center;
 }
 
 header nav a {
@@ -184,7 +185,7 @@ header nav a:hover {
 }
 
 .container_colegas {
-    margin-top: 60px;
+    margin: 60px 0 40px;
     padding: 30px 50px;
 }
 
@@ -247,30 +248,141 @@ footer p {
     padding-right: 10px;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+.container_descricao_repositorio {
+    margin-top: 60px;
+    padding: 40px !important;
+    background-color: #FDFDFD;
+    box-shadow: 0px 0px 6px 0px #18181833;
+    border-radius: 8px;
+}
+
+.container_descricao_repositorio h2 {
+    color: #002E51;
+    font-weight: 700;
+    font-size: 38px;
+    letter-spacing: -0.25px;
+    margin-bottom: 30px;
+}
+
+.informacao_repositorio {
+    text-align: justify;
+}
+
+.informacao_repositorio h3 {
+    color: #646363;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: -0.25px;
+    margin-bottom: 16px;
+}
+
+.informacao_repositorio p {
+    color: #646363;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 12px !important;
+}
+
+.informacao_repositorio a {
+    color: #002E51;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.git_informacoes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.git_informacoes p {
+    color: #646363;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0 !important;
+    padding-left: 6px;
+}
+
+@media (max-width: 576px) {
+    
+    header {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .nome_usuario {
+        margin-left: 0 !important;
+    }
+
+    header nav {
+        width: 70%;
+    }
+
     .container_sugestao {
         padding: 30px 20px;
     }
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+
     .container_sugestao {
         padding: 30px 30px;
     }
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (max-width: 992px) {
+
+    .nome_usuario {
+        font-size: 36px;
+        margin-left: 20px;
+    }
+
+    header nav a {
+        font-size: 20px;
+    }
+
+    .container_perfil {
+        flex-direction: column;
+    }
+
+    .container_perfil img {
+        margin-bottom: 20px;
+    }
+
+    .descricao {
+        width: 100%;
+    }
+
     .container_sugestao {
         padding: 30px 40px;
     }
+
+    .container_colegas img {
+        width: 150px;
+    }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
     .container_sugestao {
         padding: 30px 50px;
     }
+}
+
+html::-webkit-scrollbar {
+    width: 12px;
+
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #DADADA;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #646363;
+    border-radius: 32px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: #504F4F;
 }
